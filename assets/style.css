@@ -1,0 +1,60 @@
+:root {
+    --red:#c23564;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 720px;
+    margin: 5% auto 0;
+}
+
+.container .allTab {
+    display: flex;
+    position: relative;
+    width: 96%;
+}
+.tab-item {
+    flex-basis: 25%;
+    min-width: 80px;
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+    color: var(--red);
+    transition: all 0.5s;
+    opacity: 0.5;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    
+}
+.tab-item:first-child {
+    opacity: 1;
+}
+.tab-item:hover {
+    opacity: 1;
+   background-color: #ec9cb641;
+   border-color: #ee81a5e8 ;
+}
+
+
+.underline {
+    position: absolute;
+    width: 25%;
+    transition: all 0.3s;
+    bottom: 0;
+    left: 0;
+    border: 3px solid var(--red);
+    border-radius: 10px; 
+}
+.infor {
+    padding: 35px 10px;
+}
+.infor p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
